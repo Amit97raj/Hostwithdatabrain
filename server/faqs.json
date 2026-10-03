@@ -1,0 +1,65 @@
+[
+  {
+    "id": "KB-007",
+    "question": "asdfghjk",
+    "answer": "testing",
+    "category": "Technical",
+    "status": "Active",
+    "helpfulVotes": 0,
+    "createdAt": "2026-09-25T18:50:49.718Z"
+  },
+  {
+    "id": "KB-006",
+    "question": "How do I create a business email account?",
+    "answer": "You can create unlimited business email accounts directly from your cPanel under the Email Accounts icon. We support Webmail, IMAP, and POP3 with free spam filtering.",
+    "category": "Technical",
+    "status": "Active",
+    "helpfulVotes": 0,
+    "createdAt": "2026-09-25T18:47:27.793Z"
+  },
+  {
+    "id": "KB-001",
+    "question": "What is included with every hosting plan?",
+    "answer": "Every DataBrain hosting plan includes ultra-fast NVMe SSD storage, free Let's Encrypt SSL certificates, automated daily backups, unmetered bandwidth, cPanel control panel, 99.99% uptime SLA, and 24/7 technical support by our experts.",
+    "category": "Hosting",
+    "status": "Active",
+    "helpfulVotes": 24,
+    "createdAt": "2026-09-20T10:00:00.000Z"
+  },
+  {
+    "id": "KB-002",
+    "question": "Can I migrate my existing website to DataBrain?",
+    "answer": "Yes, absolutely! We offer 100% free website and email migration for all cPanel and WordPress websites. Our migration team handles everything with zero downtime so your visitors never experience any interruption.",
+    "category": "Migration",
+    "status": "Active",
+    "helpfulVotes": 18,
+    "createdAt": "2026-09-21T10:00:00.000Z"
+  },
+  {
+    "id": "KB-003",
+    "question": "Do you offer monthly and yearly billing?",
+    "answer": "Yes, we support both flexible monthly and discounted annual billing cycles. Choosing an annual plan unlocks special savings (up to 20% off) plus a free .in or .com domain registration for your first year.",
+    "category": "Billing",
+    "status": "Active",
+    "helpfulVotes": 15,
+    "createdAt": "2026-09-22T10:00:00.000Z"
+  },
+  {
+    "id": "KB-004",
+    "question": "How quickly will my service be activated?",
+    "answer": "Instant activation! As soon as your Razorpay or online payment is verified, your hosting account, cPanel login credentials, and server environment are provisioned automatically within 60 seconds.",
+    "category": "General",
+    "status": "Active",
+    "helpfulVotes": 32,
+    "createdAt": "2026-09-23T10:00:00.000Z"
+  },
+  {
+    "id": "KB-005",
+    "question": "How do I configure custom DNS records?",
+    "answer": "You can manage A, CNAME, MX, and TXT records directly through our Client Portal under the 'Domains & DNS' tab. Any changes you make propagate across global nameservers in real-time.",
+    "category": "Domains",
+    "status": "Active",
+    "helpfulVotes": 12,
+    "createdAt": "2026-09-24T10:00:00.000Z"
+  }
+]

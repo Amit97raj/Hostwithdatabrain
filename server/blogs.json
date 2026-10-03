@@ -1,0 +1,58 @@
+[
+  {
+    "id": "BLOG-001",
+    "title": "Why NVMe Storage Is the Game Changer for Website Loading Speeds",
+    "slug": "why-nvme-storage-is-game-changer-web-hosting",
+    "category": "Performance",
+    "authorName": "Arjun Sharma",
+    "authorPic": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "readingTime": "4 min read",
+    "shortDescription": "Traditional SSDs are fast, but NVMe protocols unlock up to 6x faster read/write speeds. Discover how modern NVMe drives reduce Time to First Byte (TTFB).",
+    "longDescription": "<h2>Understanding the NVMe Advantage</h2><p>When selecting a web hosting provider, storage technology is one of the most critical factors determining your site's response time and database performance.</p><h3>1. Direct PCIe Bus Connection</h3><p>Traditional SATA SSDs communicate through legacy AHCI controllers originally designed for spinning hard drives, capping data transfer speeds at approximately 600 MB/s. In contrast, <strong>NVMe (Non-Volatile Memory Express)</strong> communicates directly with your server's CPU via the PCIe bus, achieving bandwidths exceeding 3,500 to 7,000 MB/s.</p><blockquote>\"Switching database-heavy WordPress sites to enterprise NVMe drives routinely reduces Time to First Byte (TTFB) by 65%.\"</blockquote><h3>2. Massive Parallelism with 64,000 Queues</h3><p>NVMe drives handle up to 64,000 simultaneous command queues, each processing 64,000 entries. For e-commerce stores running concurrent WooCommerce transactions, this prevents checkout delays during traffic spikes.</p><ul><li>Up to 6x faster read and write throughput</li><li>Near-zero queue latency under concurrent loads</li><li>Instant database query resolution for dynamic sites</li></ul><p>At DataBrain, every single plan comes powered by enterprise Gen4 NVMe arrays.</p>",
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "status": "Published",
+    "publishedAt": "Sep 24, 2026"
+  },
+  {
+    "id": "BLOG-002",
+    "title": "The Essential 2026 Checklist for Securing Your cPanel Server",
+    "slug": "essential-checklist-securing-cpanel-server-2026",
+    "category": "Security",
+    "authorName": "Priya Nair",
+    "authorPic": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+    "readingTime": "6 min read",
+    "shortDescription": "Protect your web applications from brute-force intrusions, DDoS attacks, and automated vulnerability scanners with these proven server hardening steps.",
+    "longDescription": "<h2>Hardening Your Hosting Environment</h2><p>Cyber attacks targeting shared and VPS servers have increased by over 40% this year. Securing your cPanel hosting environment is no longer optional—it is fundamental to safeguarding your customers' data and brand reputation.</p><h3>Step 1: Enforce Two-Factor Authentication (2FA)</h3><p>Ensure that all cPanel and WHM administrator logins require a time-based one-time password (TOTP) from Google Authenticator or Microsoft Authenticator.</p><h3>Step 2: Configure ModSecurity & Web Application Firewall (WAF)</h3><p>A properly tuned WAF filters out SQL injection (SQLi) attempts, cross-site scripting (XSS), and malicious bots before they ever reach your WordPress or application core files.</p><pre><code># Sample ModSecurity Rule Example\nSecRule REQUEST_URI \"@contains /wp-login.php\" \\\n    \"id:1001,phase:1,deny,status:403,log,msg:'Potential Brute Force Attempt Blocked'\"</code></pre><h3>Step 3: Automated Nightly Backups</h3><p>Always maintain off-site backups stored in geographically separate data centers to ensure zero data loss in disaster recovery scenarios.</p>",
+    "coverImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+    "status": "Published",
+    "publishedAt": "Sep 22, 2026"
+  },
+  {
+    "id": "BLOG-003",
+    "title": "Migrating Your WordPress Website to Cloud Hosting with Zero Downtime",
+    "slug": "migrating-wordpress-to-cloud-hosting-zero-downtime",
+    "category": "Hosting",
+    "authorName": "Rohan Kapoor",
+    "authorPic": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    "readingTime": "5 min read",
+    "shortDescription": "A step-by-step walkthrough to clone your database, sync wp-content, lower DNS TTL, and switch nameservers without missing a single order.",
+    "longDescription": "<h2>Zero-Downtime Migration Blueprint</h2><p>Migrating a live website can feel daunting, especially when running an active online store where even five minutes of downtime means lost revenue. Follow this proven 4-stage process.</p><h3>Stage 1: Lower Your DNS TTL Ahead of Time</h3><p>At least 24 to 48 hours prior to migration, reduce the TTL (Time to Live) on your DNS records to <strong>300 seconds (5 minutes)</strong>. This guarantees that your visitors will switch to the new IP instantly once DNS is cut over.</p><h3>Stage 2: Database Export & File Synchronization</h3><p>Use WP-CLI or cPanel Backup Wizard to package your <code>wp-content</code> directory while placing the store in temporary read-only maintenance mode.</p><h3>Stage 3: Verification via Local Hosts File</h3><p>Before modifying public DNS, edit your computer's <code>/etc/hosts</code> file to preview the site on the new server's IP address. Verify payment gateways, contact forms, and SSL certificates.</p>",
+    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "status": "Published",
+    "publishedAt": "Sep 18, 2026"
+  },
+  {
+    "id": "BLOG-004",
+    "title": "Demystifying Cloud VPS vs. Dedicated Servers: Which Fits Your Growth?",
+    "slug": "cloud-vps-vs-dedicated-servers-comparison",
+    "category": "Cloud",
+    "authorName": "Aditya Singh",
+    "authorPic": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+    "readingTime": "7 min read",
+    "shortDescription": "Compare hypervisor isolation, vertical elasticity, root access control, and hardware pricing to choose the perfect server tier for your workloads.",
+    "longDescription": "<h2>Balancing Flexibility and Raw Compute</h2><p>When your website or SaaS application outgrows shared hosting, deciding between Cloud VPS and bare-metal Dedicated Servers is your next major architectural milestone.</p><h3>When to Choose Cloud VPS:</h3><ul><li><strong>Elastic Scaling:</strong> Add RAM or vCPUs in seconds without hardware reboots.</li><li><strong>Cost Efficiency:</strong> Pay only for resources provisioned, starting at just ₹899/mo.</li><li><strong>High Availability:</strong> Automatic node failover if a hypervisor physical node encounters an error.</li></ul><h3>When to Choose Dedicated Servers:</h3><ul><li><strong>100% Hardware Exclusivity:</strong> Zero neighbor contention for extreme database workloads.</li><li><strong>Custom Kernel Modules:</strong> Full hardware-level control over virtualization setups.</li><li><strong>Predictable High Throughput:</strong> Sustained gigabit unmetered bandwidth with zero throttling.</li></ul>",
+    "coverImage": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    "status": "Published",
+    "publishedAt": "Sep 12, 2026"
+  }
+]

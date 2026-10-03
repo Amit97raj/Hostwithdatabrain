@@ -1,0 +1,295 @@
+.module-sidebar .main-nav{margin-top:10px}.back-module{height:38px;margin:0 10px 22px;color:#758f9b;text-decoration:none;display:flex;align-items:center;gap:7px;font-size:11px}.back-module svg{width:14px}.module-content{max-width:1450px}.module-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.module-heading h1{font-family:Manrope,sans-serif;font-size:27px;letter-spacing:-.8px;margin:8px 0 6px;text-transform:capitalize}.module-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:17px}.module-stats .panel{display:flex;align-items:center;gap:12px;padding:18px}.module-stats .panel>svg{width:20px;color:#1597d4;background:#e8f7fc;padding:7px;box-sizing:content-box;border-radius:7px}.module-stats span,.module-stats strong{display:block}.module-stats span{font-size:10px;color:#8fa2aa}.module-stats strong{font-size:20px;margin-top:5px}.module-stats .api-online{color:#20a57b;font-size:13px}.module-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.module-toolbar .search-box{width:280px}.module-toolbar .button{height:34px}.module-table{min-height:360px}.module-table table{min-width:650px}.empty-module{text-align:center;padding:75px 20px;color:#8aa0a8}.empty-module>svg{width:25px;color:#77c5e0}.empty-module h2{font-size:16px;color:#456371;margin:14px 0 6px}.empty-module p{font-size:11px;margin:0 0 18px}.empty-module .button{margin:auto}.module-table .text-link{padding:0}@media(max-width:720px){.module-heading{display:block}.module-heading .welcome-actions{margin-top:18px}.module-stats{grid-template-columns:1fr}.module-toolbar{display:block}.module-toolbar .search-box{width:100%;margin-bottom:10px}.module-toolbar>.button{width:100%;justify-content:center}.module-content{padding-left:15px;padding-right:15px}}
+
+/* Interactive Clickable Stat Cards & Dashboard Links */
+.clickable-stat-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  user-select: none;
+}
+
+.clickable-stat-card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8 !important;
+  box-shadow: 0 12px 28px -4px rgba(14, 116, 144, 0.12), 0 6px 14px -2px rgba(30, 78, 101, 0.08) !important;
+}
+
+.clickable-stat-card:active {
+  transform: translateY(-1px);
+}
+
+.stat-top-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-redirect-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: #f1f7fa;
+  color: #78909d;
+  transition: all 0.2s ease;
+}
+
+.card-redirect-badge svg {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.2s ease;
+}
+
+.clickable-stat-card:hover .card-redirect-badge {
+  background: #1597d4;
+  color: #ffffff;
+}
+
+.clickable-stat-card:hover .card-redirect-badge svg {
+  transform: translate(1px, -1px);
+}
+
+.stat-card-hint {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed #e8f0f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #92a4ac;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.stat-card-hint span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.clickable-stat-card:hover .stat-card-hint {
+  color: #087bb5;
+}
+
+.panel-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-link-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #087bb5;
+  background: #eaf7fd;
+  border: 1px solid #d4effa;
+  padding: 5px 9px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.panel-link-badge svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s ease;
+}
+
+.panel-link-badge:hover {
+  background: #dff2fa;
+  border-color: #bce4f6;
+  color: #0369a1;
+}
+
+.panel-link-badge:hover svg {
+  transform: translate(1px, -1px);
+}
+
+.revenue-summary-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  border-radius: 8px;
+  padding: 4px 6px;
+  margin: -4px -6px;
+  transition: background 0.18s ease;
+}
+
+.revenue-summary-link:hover {
+  background: #f4fafc;
+}
+
+.revenue-summary-link:hover strong {
+  color: #087bb5;
+}
+
+.donut-clickable-wrap {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  margin: 18px 0 16px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  padding: 6px 8px;
+  transition: background 0.2s ease;
+}
+
+.donut-clickable-wrap:hover {
+  background: #f6fafc;
+}
+
+.donut-clickable-wrap:hover .donut-center strong {
+  color: #087bb5;
+}
+
+.underline-link {
+  color: #087bb5;
+  font-weight: 600;
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Module Table Professional Typography & Spacing */
+.module-table th {
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  color: #64748b !important;
+  background: #f8fafc !important;
+  padding: 14px 18px !important;
+  text-transform: uppercase !important;
+}
+
+.module-table td {
+  padding: 15px 18px !important;
+  font-size: 14px !important;
+  color: #334155 !important;
+  border-top: 1px solid #f1f5f9 !important;
+  vertical-align: middle !important;
+}
+
+.module-table tbody tr {
+  transition: background 0.15s ease !important;
+}
+
+.module-table tbody tr:hover {
+  background: #f8fafc !important;
+}
+
+/* Sidebar Enhanced Typography & Visual Hierarchy */
+.sidebar .nav-item {
+  height: 44px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  gap: 12px !important;
+  padding: 0 14px !important;
+  border-radius: 9px !important;
+  color: #475569 !important;
+  transition: all 0.18s ease !important;
+}
+
+.sidebar .nav-item svg {
+  width: 18px !important;
+  height: 18px !important;
+  flex-shrink: 0;
+}
+
+.sidebar .nav-item:hover {
+  background: #f1f5f9 !important;
+  color: #0284c7 !important;
+}
+
+.sidebar .nav-item.active {
+  background: #e0f2fe !important;
+  color: #0284c7 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 1px 3px rgba(2, 132, 199, 0.1) !important;
+}
+
+.sidebar .nav-label {
+  font-size: 11px !important;
+  letter-spacing: 0.8px !important;
+  color: #94a3b8 !important;
+  margin-bottom: 10px !important;
+}
+
+/* Toolbar & Search Enhanced Typography */
+.module-toolbar .search-box {
+  width: 320px !important;
+  height: 40px !important;
+  border-radius: 9px !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.module-toolbar .search-box svg {
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.module-toolbar .search-box input {
+  font-size: 13.5px !important;
+  color: #0f172a !important;
+}
+
+.module-toolbar .button {
+  height: 40px !important;
+  font-size: 13px !important;
+  padding: 0 16px !important;
+  border-radius: 8px !important;
+}
+
+/* Module Stat Cards */
+.module-stats .panel {
+  padding: 20px 22px !important;
+}
+
+.module-stats span {
+  font-size: 11.5px !important;
+  letter-spacing: 0.2px;
+}
+
+.module-stats strong {
+  font-size: 24px !important;
+  margin-top: 6px !important;
+}
+
+/* Status Badges */
+.status-badge {
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  padding: 4px 11px !important;
+  border-radius: 9999px !important;
+}
+
+.status-dot {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+/* Action Buttons Global Text Enhancement */
+.action-btn {
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  padding: 6px 13px !important;
+}
+
+.action-btn svg {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+
+

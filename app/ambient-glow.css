@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Ambient Mouse Glow (Linear & Stripe Style Tech Spotlight)
+   Native cursor is 100% preserved. Zero interference with text or inputs.
+   ========================================================================== */
+
+/* Fixed background ambient light that smoothly follows mouse position */
+.ambient-glow-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  pointer-events: none !important;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(14, 165, 233, 0.09) 0%,
+    rgba(2, 132, 199, 0.035) 45%,
+    transparent 70%
+  );
+  filter: blur(50px);
+  will-change: transform;
+  transition: opacity 0.4s ease;
+  opacity: 0.9;
+}
+
+/* Global Subtle Spotlight Overlay */
+.ambient-spotlight-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none !important;
+  z-index: 1;
+  background: radial-gradient(
+    650px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(14, 165, 233, 0.04),
+    transparent 75%
+  );
+}
+
+/* Ensure interactive elements and cards remain sharp above the ambient glow */
+.hero,
+.domain-section,
+.category-strip,
+.pricing-section-container,
+.why-section,
+.testimonial-section,
+.faq-section,
+.contact-section,
+.site-footer,
+.site-header {
+  position: relative;
+  z-index: 2;
+}
+
+/* Subtle Interactive Card Border Glow on Hover */
+.pricing-card-box,
+.contact-form,
+.contact-card,
+.domain-search,
+.faq-item-card {
+  position: relative;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-card-box:hover,
+.contact-card:hover {
+  box-shadow: 0 10px 30px rgba(14, 165, 233, 0.08) !important;
+}
+
+/* Disable on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .ambient-glow-follower,
+  .ambient-spotlight-layer {
+    display: none !important;
+  }
+}

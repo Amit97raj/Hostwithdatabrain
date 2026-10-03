@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Custom Cursor: Glowing Orb, Glass Ring, Smooth Trail & Magnetic Effects
+   ========================================================================== */
+
+/* Hide custom cursor on touch/mobile devices or when unsupported */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor-container {
+    display: none !important;
+  }
+}
+
+.custom-cursor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none !important;
+  z-index: 999999 !important;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.custom-cursor-container.cursor-hidden {
+  opacity: 0 !important;
+}
+
+/* Trail Canvas */
+.cursor-trail-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none !important;
+}
+
+/* Glass Ring */
+.cursor-glass-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  pointer-events: none !important;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, rgba(2, 132, 199, 0.04) 70%);
+  border: 1.5px solid rgba(56, 189, 248, 0.65);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 
+    0 0 16px rgba(14, 165, 233, 0.35),
+    inset 0 0 8px rgba(255, 255, 255, 0.25);
+  will-change: transform, width, height, border-color, background;
+  transition: 
+    width 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Magnetic Hover State */
+.custom-cursor-container.is-hovering .cursor-glass-ring {
+  width: 58px;
+  height: 58px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.22) 0%, rgba(3, 105, 161, 0.08) 75%);
+  border-color: rgba(56, 189, 248, 0.95);
+  box-shadow: 
+    0 0 24px rgba(14, 165, 233, 0.6),
+    0 0 8px rgba(255, 255, 255, 0.4),
+    inset 0 0 12px rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Glowing Central Orb */
+.cursor-glowing-orb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  pointer-events: none !important;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 
+    0 0 10px #38bdf8,
+    0 0 20px #0284c7,
+    0 0 35px rgba(14, 165, 233, 0.8);
+  will-change: transform;
+  transition: transform 0.15s ease, width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+}
+
+.custom-cursor-container.is-hovering .cursor-glowing-orb {
+  width: 6px;
+  height: 6px;
+  box-shadow: 
+    0 0 12px #38bdf8,
+    0 0 24px #0284c7,
+    0 0 40px rgba(14, 165, 233, 0.9);
+}
+
+/* Active Click Shrink */
+.custom-cursor-container.is-clicking .cursor-glass-ring {
+  transform: translate(-50%, -50%) scale(0.72) !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.9), inset 0 0 16px rgba(255, 255, 255, 0.6) !important;
+}
+
+.custom-cursor-container.is-clicking .cursor-glowing-orb {
+  transform: translate(-50%, -50%) scale(1.4) !important;
+  background: #e0f2fe;
+}
+
+/* Click Ripple Shockwave */
+.cursor-shockwave {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none !important;
+  transform: translate(-50%, -50%) scale(0.2);
+  border: 2px solid rgba(56, 189, 248, 0.85);
+  box-shadow: 0 0 16px rgba(14, 165, 233, 0.6);
+  animation: shockwavePulse 0.55s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+@keyframes shockwavePulse {
+  0% {
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 1;
+    border-color: rgba(56, 189, 248, 0.95);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    width: 90px;
+    height: 90px;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    border-color: rgba(14, 165, 233, 0.1);
+  }
+}
+
+/* Click Spark Particles */
+.cursor-spark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  pointer-events: none !important;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #0284c7;
+  animation: sparkDisperse 0.45s ease-out forwards;
+}
+
+@keyframes sparkDisperse {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) scale(0);
+    opacity: 0;
+  }
+}

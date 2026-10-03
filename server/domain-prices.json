@@ -1,0 +1,134 @@
+{
+  ".com": {
+    "tld": ".com",
+    "name": "Commercial",
+    "price": 799,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 999,
+    "popular": true
+  },
+  ".in": {
+    "tld": ".in",
+    "name": "India",
+    "price": 499,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 699,
+    "popular": true
+  },
+  ".net": {
+    "tld": ".net",
+    "name": "Network",
+    "price": 899,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1099,
+    "popular": true
+  },
+  ".co": {
+    "tld": ".co",
+    "name": "Company / Startup",
+    "price": 1299,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1999,
+    "popular": true
+  },
+  ".org": {
+    "tld": ".org",
+    "name": "Organization",
+    "price": 999,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1199
+  },
+  ".io": {
+    "tld": ".io",
+    "name": "Tech & Developer",
+    "price": 2799,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 3299
+  },
+  ".dev": {
+    "tld": ".dev",
+    "name": "Developer",
+    "price": 1099,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1299
+  },
+  ".app": {
+    "tld": ".app",
+    "name": "Application",
+    "price": 1199,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1399
+  },
+  ".xyz": {
+    "tld": ".xyz",
+    "name": "General Purpose",
+    "price": 299,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 899
+  },
+  ".online": {
+    "tld": ".online",
+    "name": "Online Presence",
+    "price": 199,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1499
+  },
+  ".ai": {
+    "tld": ".ai",
+    "name": "Artificial Intelligence",
+    "price": 5499,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 5999
+  },
+  ".tech": {
+    "tld": ".tech",
+    "name": "Technology",
+    "price": 499,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1899
+  },
+  ".store": {
+    "tld": ".store",
+    "name": "E-Commerce",
+    "price": 299,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1999
+  },
+  ".info": {
+    "tld": ".info",
+    "name": "Information",
+    "price": 449,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1299
+  },
+  ".co.in": {
+    "tld": ".co.in",
+    "name": "Indian Business",
+    "price": 399,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 599
+  },
+  ".biz": {
+    "tld": ".biz",
+    "name": "Business",
+    "price": 599,
+    "currency": "₹",
+    "period": "/yr",
+    "renewalPrice": 1299
+  }
+}

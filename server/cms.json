@@ -1,0 +1,45 @@
+{
+  "banner": {
+    "enabled": true,
+    "eyebrow": "Get 80% Off Hosting with Free Domain",
+    "title": "Launch your website in minutes",
+    "description": "Fast, secure & reliable hosting built for Indian websites.",
+    "buttonText": "Start Now",
+    "buttonLink": "#plans",
+    "imageUrl": "http://localhost:4000/uploads/hero-builder.jpg",
+    "feature1": "Up to 20x faster website performance",
+    "feature2": "Free SSL, email & daily backups",
+    "feature3": "Create your website faster with AI",
+    "guarantee": "30-day money-back guarantee • Cancel anytime",
+    "trustBadge": "1 million +",
+    "trustLabel": "Websites Trust Us"
+  },
+  "why": {
+    "overline": "BUILT FOR THE LONG RUN",
+    "title": "More than hosting.",
+    "subtitle": "A partner in your progress.",
+    "description": "From your first domain search to your busiest season, DataBrain gives you the infrastructure and human support to keep moving confidently.",
+    "imageUrl": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80",
+    "metricValue": "+38%",
+    "metricLabel": "faster growth after switching",
+    "feature1Title": "Speed without shortcuts",
+    "feature1Description": "NVMe storage and next-gen infrastructure keep every click feeling instant.",
+    "feature2Title": "People who pick up",
+    "feature2Description": "Get thoughtful, expert support whenever you need a second pair of eyes."
+  },
+  "social": {
+    "instagram": "https://instagram.com/databrainit",
+    "facebook": "https://facebook.com/databrainit",
+    "linkedin": "https://linkedin.com/company/databrainit",
+    "youtube": "https://youtube.com/@databrainit"
+  },
+  "seo": {
+    "title": "DataBrain IT Solutions | Fast, reliable web hosting",
+    "description": "Web hosting, domains, SSL, business email and digital services from DataBrain."
+  },
+  "navigation": {
+    "showOffers": false,
+    "showBlog": true,
+    "showKnowledgeBase": true
+  }
+}

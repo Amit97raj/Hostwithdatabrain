@@ -1,0 +1,64 @@
+[
+  {
+    "id": "CUS-260",
+    "name": "Amit Kumar",
+    "detail": "amit.kumar@gmail.com · +91 98765 43210",
+    "status": "Active",
+    "email": "amit.kumar@gmail.com",
+    "phone": "+91 98765 43210"
+  },
+  {
+    "id": "CUS-259",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-258",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-257",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-256",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-255",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-254",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-252",
+    "name": "Amit",
+    "detail": "aMIT@GMAIL.COM",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-251",
+    "name": "Amit Raj",
+    "detail": "amit@gmail.com · 12345678",
+    "status": "Active"
+  },
+  {
+    "id": "CUS-248",
+    "name": "Rohan Kapoor",
+    "detail": "rohan@example.com",
+    "status": "Active"
+  }
+]

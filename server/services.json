@@ -1,0 +1,46 @@
+[
+  {
+    "id": "SRV-001",
+    "name": "Starter",
+    "description": "A simple start for personal websites and portfolios.",
+    "price": "₹149",
+    "popular": false,
+    "status": "Active",
+    "features": [
+      "1 website",
+      "20 GB NVMe storage",
+      "Free SSL certificate",
+      "Weekly backups"
+    ]
+  },
+  {
+    "id": "SRV-002",
+    "name": "Business",
+    "description": "Everything growing businesses need to move faster.",
+    "price": "₹299",
+    "popular": true,
+    "status": "Active",
+    "features": [
+      "Unlimited websites",
+      "50 GB NVMe storage",
+      "Free domain for 1 year",
+      "Daily backups",
+      "Business email included"
+    ]
+  },
+  {
+    "id": "SRV-003",
+    "name": "Cloud Pro",
+    "description": "More power, control, and room for ambitious projects.",
+    "price": "₹699",
+    "popular": false,
+    "status": "Active",
+    "features": [
+      "Unlimited websites",
+      "100 GB NVMe storage",
+      "Dedicated resources",
+      "Priority support",
+      "Free migration"
+    ]
+  }
+]

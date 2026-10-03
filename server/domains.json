@@ -1,0 +1,46 @@
+[
+  {
+    "id": "DOM-1001",
+    "name": "databrainlabs.in",
+    "customer": "Amit Sharma",
+    "customerEmail": "amit@gmail.com",
+    "registeredDate": "2025-10-14",
+    "expiryDate": "2026-10-14",
+    "status": "Active",
+    "autoRenew": true,
+    "privacyProtection": true,
+    "locked": true,
+    "authCode": "DB#8892_Trx",
+    "nameservers": [
+      "ns1.databrainhost.com",
+      "ns2.databrainhost.com"
+    ],
+    "dnsRecords": [
+      { "id": "rec-1", "type": "A", "name": "@", "value": "185.199.108.153", "ttl": "3600" },
+      { "id": "rec-2", "type": "CNAME", "name": "www", "value": "databrainlabs.in", "ttl": "3600" },
+      { "id": "rec-3", "type": "MX", "name": "@", "value": "mail.databrainhost.com", "priority": "10", "ttl": "3600" },
+      { "id": "rec-4", "type": "TXT", "name": "@", "value": "v=spf1 include:_spf.databrainhost.com ~all", "ttl": "3600" }
+    ]
+  },
+  {
+    "id": "DOM-1002",
+    "name": "amitcloud.com",
+    "customer": "Amit Sharma",
+    "customerEmail": "amit@gmail.com",
+    "registeredDate": "2026-01-20",
+    "expiryDate": "2027-01-20",
+    "status": "Active",
+    "autoRenew": true,
+    "privacyProtection": true,
+    "locked": true,
+    "authCode": "AC#4912_Exp",
+    "nameservers": [
+      "ns1.databrainhost.com",
+      "ns2.databrainhost.com"
+    ],
+    "dnsRecords": [
+      { "id": "rec-1", "type": "A", "name": "@", "value": "185.199.112.44", "ttl": "3600" },
+      { "id": "rec-2", "type": "CNAME", "name": "www", "value": "amitcloud.com", "ttl": "3600" }
+    ]
+  }
+]

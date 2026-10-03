@@ -1,0 +1,71 @@
+[
+  {
+    "id": "TK-0004",
+    "name": "Amit",
+    "email": "amit@gmail.com",
+    "service": "Cloud Hosting",
+    "phone": "+91 98765 43210",
+    "message": "Need help setting up Redis caching on our Mumbai Cloud instance.",
+    "status": "Pending",
+    "priority": "High",
+    "department": "Technical Support",
+    "createdAt": "2026-09-27T18:15:00.000Z",
+    "replies": [
+      {
+        "id": "rep-201",
+        "sender": "DataBrain Support Engineer",
+        "role": "staff",
+        "message": "Hello Amit, our system team is configuring Redis 7.2 on port 6379 for your cluster. Verification is pending.",
+        "createdAt": "2026-09-27T18:45:00.000Z"
+      }
+    ]
+  },
+  {
+    "id": "TK-0003",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "service": "Cloud Hosting",
+    "phone": "+91 98765 43210",
+    "message": "Nginx reverse proxy is returning 502 Bad Gateway on production.",
+    "status": "Open",
+    "priority": "Critical",
+    "department": "Technical Support",
+    "createdAt": "2026-09-26T19:38:51.367Z",
+    "replies": []
+  },
+  {
+    "id": "TK-0002",
+    "name": "Amit",
+    "email": "amit@gmail.com",
+    "service": "Web Hosting",
+    "phone": "234567890",
+    "message": "Domain pointing is taking too long to propagate. Please check DNS.",
+    "status": "Resolved",
+    "priority": "Medium",
+    "department": "Domain & DNS",
+    "createdAt": "2026-09-24T17:54:51.559Z",
+    "replies": [
+      {
+        "id": "rep-1790536342119",
+        "sender": "DataBrain Support Specialist",
+        "role": "staff",
+        "message": "Domain A records have been propagated and verified across all global DNS edge servers.",
+        "createdAt": "2026-09-27T19:12:22.119Z"
+      }
+    ],
+    "updatedAt": "2026-09-27T19:12:22.119Z"
+  },
+  {
+    "id": "TK-0001",
+    "name": "Test User",
+    "email": "test@example.com",
+    "service": "Web Hosting",
+    "phone": "+91 98765 43210",
+    "message": "I need help with my hosting plan and SSL certificate activation.",
+    "status": "Open",
+    "priority": "Low",
+    "department": "Technical Support",
+    "createdAt": "2026-09-24T17:49:28.625Z",
+    "replies": []
+  }
+]
